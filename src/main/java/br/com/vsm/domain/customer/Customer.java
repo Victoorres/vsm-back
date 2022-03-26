@@ -1,4 +1,4 @@
-package br.com.vsm.customer;
+package br.com.vsm.domain.customer;
 
 import javax.persistence.*;
 import lombok.Getter;
