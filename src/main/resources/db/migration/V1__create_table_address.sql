@@ -1,0 +1,11 @@
+CREATE TABLE address (
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE,
+    zipCode VARCHAR(8) NOT NULL,
+    district VARCHAR(200) NOT NULL,
+    street VARCHAR(200) NOT NULL,
+    number VARCHAR(100),
+    complement VARCHAR(225),
+    city VARCHAR(40),
+    uf VARCHAR(40),
+
+PRIMARY KEY(id));

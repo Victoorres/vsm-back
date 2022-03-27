@@ -3,5 +3,7 @@ CREATE TABLE customer (
     name VARCHAR(225) NOT NULL,
     document VARCHAR(225) NOT NULL,
     phone VARCHAR(225) NOT NULL,
+    addressId BIGINT UNSIGNED,
 
+FOREIGN KEY(addressId) REFERENCES address(id),
 PRIMARY KEY(id));
