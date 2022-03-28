@@ -12,7 +12,6 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-
     @GetMapping("")
     public ResponseEntity findCustomers() {
         return ResponseEntity.ok().body(customerService.findAll());
@@ -31,7 +30,7 @@ public class CustomerController {
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public Customer inactivateCustomer(@RequestBody Customer customer) {
+    public Customer updateCustomer(@RequestBody Customer customer) {
         return customerService.save(customer);
     }
 }

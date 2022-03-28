@@ -26,7 +26,13 @@ public class Customer {
     @Column(name = "phone")
     private String phone;
 
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @Column(name = "email")
+    private String email;
+
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "addressid")
     private Address address;
+
+    @Column(name = "isinactive")
+    private boolean isInactive;
 }
